@@ -10,43 +10,151 @@
         body{
             font-family: 'Baloo Da 2', cursive;
             /* background: no-repeat url("ninions.png"); */
+            background-color: rgb(201, 238, 143);
+            margin: 0px;
+        }
+        .header{
             background-color: yellow;
+            height: 15vh;
+            color: rgb(0, 7, 12);
         }
         img{
             position: absolute;
             width: 150px;
             height: 100px;
-            margin-left: 50px;
+            margin-left: 60px;
         }
-        .header div{
+        .left div{
             position: absolute;
             font-size: 2rem;
-            margin-top: 80px;
-            margin-left: 10px;
+            margin-top: 90px;
+            margin-left: 20px;
         }
-        .container{
+        .center{
             display: block;
             margin: 10px auto;
-            width: 500px;
-            border: 2px solid red;
+            /* text-align: right; */
+            width: 40%;
+            /* border: 2px solid red; */
+            font-size: 2rem;
+            float: right;
+        }
+        li{
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px;
+        }
+        a{
+            cursor: pointer;
+            text-decoration: none;
+        }
+        a:hover{
+           color: grey;
+        }
+        a:active{
+            color: rgb(60, 31, 226);
+        }
+        ul{
+            text-align: center;
+            float: right;
+        }
+        .text-container{
+            font-family: 'Baloo Da 2', cursive;
+            height: 20vh;
+            width: 50%;
+            background-color: azure;
+            margin: 10px auto;
+            font-size: 2rem;
+            display: block;
+            padding: 5px 15px;
+            border-radius: 25px;
+        }
+        #btn{
+            font-family: 'Baloo Da 2', cursive;
+            background-color: blue;
+            font-size: 1.8rem;
+            color: aliceblue;
+            padding: 7px 14px;
+            border-radius: 20px;
+            display: block;
+            margin: auto;
+        }
+        .footer{
+            background-color: rgb(81, 245, 231);
+            font-size: 2.3rem;
+            height: 35vh;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .footer div{
+            /* border: 2px solid red; */
+            margin-bottom: 5px;
+            margin-top: 5px;
+            padding: 10px;
+            text-align: center;
+            /* display: inline-block; */
+        }
+        #fb{
+            position: absolute;
+            width: 96px;
+            height: 60px;
+            margin-left: 144px;
+        }
+        #ins{
+            position: absolute;
+            width: 54px;
+            height: 50px;
+            margin-left: 170px;
+        }
+        #git{
+            position: absolute;
+            width: 75px;
+            height: 50px;
+            margin-left: 120px;
+        }
+        h1{
+            text-align: center;
+            padding-top: 10px;
+            font-size: 2.5rem;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="ninions.png" alt="">
-        <div>banana translator</div>
-    </div>
-
-    <div class="container">
+        <div class="left">
+            <img src="ninions.png" alt="">
+            <div>banana translator</div>
+        </div>
+        <div class="center">
         <ul>
-            <li>Home</li>
-            <li>about me</li>
-            <li>my projects</li>
-            <li>my blogs</li>
+                <li><a>Home</a></li>
+                <li><a>aboutMe</a></li>
+                <li><a>myProjects</a></li>
+                <li><a>blog</a></li>
         </ul>
+        </div>
+    </div>
+    
+    <div class="container">
+        <textarea class="text-container" name="input" placeholder="Write your sentence here"></textarea>
+        <button id="btn">Translate</button>
+        <textarea class="text-container" name="output" ></textarea>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer">
+        <h1>You can follow me on</h1>
+        <div>
+            <img id="fb"src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="">
+            <a href="/">facebook</a>
+        </div>
+        <div>
+            <img id="ins" src="https://workingwithdog.com/wp-content/uploads/2016/05/new_instagram_logo-1024x1024.jpg" alt="">
+            <a href="/">instagram</a>
+        </div>
+        <div>
+            <img id="git" src="https://bsmedia.business-standard.com/_media/bs/img/article/2020-02/13/full/1581607900-9541.jpg" alt="">
+            <a href="/">gitHub</a>
+        </div>
+    </div>
 </body>
 </html>
